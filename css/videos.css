@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+nav{
+    padding:1rem;
+    position: fixed;
+    width: 100%;
+    background: #FFF;
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.burgerMenu{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 40px;
+    justify-content: center;
+}
+.burgerMenu:hover{
+    transition: .5s;
+    background-color: #bdb4b4;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width:6rem;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e0d9d9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  
+  .sidenav a {
+    background-color: transparent;
+    width: 13rem;
+    border: none;
+    padding: 8px 8px 8px 2px;
+    text-decoration: none;
+    font-size:1rem;
+    color: black;
+    display: flex;
+    transition: 0.3s;
+    gap: 1rem;
+  }
+  .btn span{
+    padding-right: 1rem;
+  }
+  .btn i{
+    padding-right: 1.5rem;
+  }
+  .sidenav a:hover {
+    border-radius: 10px;
+    color: #818181;
+    background: #bdb4b4;
+  }
+  .sidenav a:focus{
+    background-color: #bdb4b4;
+    box-shadow: none;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #mySidenav .Left{
+    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+.center{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.mic span{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2px;
+    width: 2.5rem;
+    display: flex;
+    height: 2.5rem;
+}
+.mic:hover{
+    transition: .5s;
+    background-color: #bdb4b4;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+.search input[type="text"]{
+  outline: none;
+    font-size: 1.1rem;
+    width: 30rem;
+    padding: 7.5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px gray solid;
+}
+.search button{
+    display: flex;
+    align-items: center;
+    border-left: none;
+    width: 3rem;
+    padding: 8.8px;
+    border: 1px gray solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.right .mnnu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20px;
+}
+.right .mnnu:hover{
+  background: #818181;
+  transition: .5s ease;
+
+}
+.acc{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    border: .1px solid grey;
+    padding: 5PX;
+    border-radius: 20PX;
+}
+.acc:hover{
+  background: #bdb4b4;
+  transition: .5s ease;
+}
+.Body{
+  padding-top: 3.5%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+/* sidemenu */
+.side:hover{
+  background: #818181;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+.side-menu{
+  padding-top: 2%;
+
+  width: 5%;
+}
+.Cont{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.cont button:hover{
+  background: black;
+  color: #FFF;
+  transition: .5s ease;
+}
+.side{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  height: 3.9rem;
+  align-items: center;
+}
+.side i,span{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.side p{
+  font-size: 11px;
+}
+.upper-center{
+  float: right;
+  padding: 1%;
+}
+.upper-center button{
+  width: auto;
+  font-size: 15px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 2px 2px #ebe6e6;
+  border-radius: 10px;
+
+}
+.navbutton{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: #FFF;
+  height: 8%;
+}
+.video-content{
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+video{
+  max-width: 100%;
+  border-radius: 20px;
+}
+video:hover{
+  border-radius: none;
+}
+
+.video-content video::-webkit-media-controls {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.video-content video:hover::-webkit-media-controls {
+  opacity: 1;
+}
+.vid:hover{
+  transform: translate(1.1);
+  cursor: pointer;
+}
+.caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.caption .up{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+.caption .up p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caption .up img{
+  width: 2rem;
+  border-radius: 20px;
+  height: 2rem;
+}
+.caption .low{
+  display: flex;
+  flex-direction: column;
+}
+
+/* youtube videos */
+
+.vidbody{
+  padding-left: 9%;
+  padding-right: 2%;
+  padding-top: 6%;
+  display: flex;
+  gap: 1rem ;
+}
+.lft{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.lft video{
+  height: 67vh;
+  width: 150vh;
+}
+.pp{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+.vlog{
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.vlog img{
+  width: 2rem;
+  border-radius: 20px;
+  height: 2rem;
+}
+.reaction{
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.btns{
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  gap: 1rem;
+ background: #bdb4b4;
+}
+.btnss{
+  display: flex;
+  background: #bdb4b4;
+  align-items: center;
+  padding: 2%;
+  border-radius: 40px;
+}
+.list{
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+  gap: .5rem;
+}
+.list video{
+  width: 12rem;
+}
+.videolist{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.list p{
+  font-size: .9rem;
+}

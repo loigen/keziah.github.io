@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.right-side a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s ;
+}
+.right-side a:hover{
+    color: #B76E79;
+    transition: .5s;
+    transform: scale(1.1);
+}
+.gallery{
+    background: url(/IMG20230504162325.jpg), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.bannerGallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.bannerGallery h1{
+    font-size: 10rem;
+    position: relative;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+.bannerGallery h1::before{
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0   ;
+height: 100%;
+color: #B76E79    ;
+-webkit-text-stroke: 0vw #383d52;
+overflow: hidden;
+animation: animate 6s linear infinite;
+
+}
+.us{
+    padding: 10px;
+    background: #383d52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+}
+.us .title{
+    font-size: 3rem;
+    color: #FFF;
+    font-family: 'Lobster', sans-serif;
+
+}
+.us .photoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.photoContainer img{
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 50rem;
+    border: #B76E79 solid 10px;
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+
+}
+.pictureAllCOntainer img{
+  width: 10rem;
+    height: 11rem;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  #close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  #close:hover,
+  #close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #seeAllBtn, #showFewBtn,#seeAllBtn2, #showFewBtn2{
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #B76E79    ;
+    border: 3px solid #B76E79;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    text-transform: uppercase;
+    padding: 0.3em 1em;
+  }
+  #seeAllBtn:hover, #showFewBtn:hover,#seeAllBtn2:hover, #showFewBtn2:hover{
+    transform: translateY(-5px);
+    background-color: #B76E79;
+    color: #fff;
+}
+  .galleryPhotos,.galleryPhotosForFunnyPhotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px;
+    background: #383d52;
+
+  }
+  .galleryPhotos h1,.galleryPhotosForFunnyPhotos h1{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Lobster', sans-serif;
+  }
+  .galleryPhotosForFunnyPhotos .pictureAllCOntainer, .pictureAllCOntainer{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+}
+  .galleryPhotos img, .galleryPhotosForFunnyPhotos img{
+    width: 8rem;
+    border-radius: 20px;
+    animation: anime 1.5s infinite ease-in-out alternate;
+    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+
+  }
+@keyframes anime {
+    100%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+        box-shadow: 0 40px 10px -18px rgba(0,0,0,0.2), 0 40px 16px -12px rgba(0,0,0,0.2);
+    }
+}
+@keyframes animate {
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    { 
+        width: 100%;
+    }
+
+}
