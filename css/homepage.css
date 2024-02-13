@@ -173,9 +173,7 @@ animation: animate 6s linear infinite;
 }
   .galleryPhotos img, .galleryPhotosForFunnyPhotos img{
     width: 8rem;
-    border-radius: 20px;
-    animation: anime 1.5s infinite ease-in-out alternate;
-    -webkit-animation: anime 1.5s infinite ease-in-out alternate;
+    border-radius: 10px;
 
   }
 @keyframes anime {
